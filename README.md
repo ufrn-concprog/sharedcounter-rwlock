@@ -55,4 +55,4 @@ Reader-4 finished reading
 Reader-5 finished reading
 ```
 
-⚠️ *Note:* The exact interleaving and order of threads may vary across executions due to thread scheduling.
+⚠️ **Note:** The exact interleaving and order of threads may vary across executions due to thread scheduling.
