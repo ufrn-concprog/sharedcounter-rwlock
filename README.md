@@ -17,10 +17,11 @@ The main program simulates concurrent execution in two phases: first launching m
 
 ```text
 .
+└── doc                     # Javadoc documentation
 ├── README.md
 └── src
-    ├── Main.java            # Entry point demonstrating concurrent reading and exclusive writing behavior
-    └── SharedCounter.java   # Implements the thread-safe counter backed by ReentrantReadWriteLock
+    ├── Main.java           # Entry point demonstrating concurrent reading and exclusive writing behavior
+    └── SharedCounter.java  # Implements the thread-safe counter backed by ReentrantReadWriteLock
 ```
 
 ## 🚀 Getting Started
