@@ -39,20 +39,20 @@ When running the application, multiple readers execute concurrently (overlapping
 
 ```text
 Reader-1 reading (value = 0)
-Reader-3 reading (value = 0)
 Reader-2 reading (value = 0)
-Reader-2 finished reading
+Reader-3 reading (value = 0)
 Reader-3 finished reading
 Reader-1 finished reading
+Reader-2 finished reading
 
-Reader-4 reading (value = 0)
-Reader-5 reading (value = 0)
-Reader-4 finished reading
-Reader-5 finished reading
-Writer-2 writing (value -> 14)
-Writer-2 finished writing
 Writer-1 writing (value -> 42)
 Writer-1 finished writing
+Writer-2 writing (value -> 14)
+Writer-2 finished writing
+Reader-4 reading (value = 14)
+Reader-5 reading (value = 14)
+Reader-4 finished reading
+Reader-5 finished reading
 ```
 
 ⚠️ *Note:* The exact interleaving and order of threads may vary across executions due to thread scheduling.
