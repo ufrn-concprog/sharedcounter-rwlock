@@ -28,8 +28,6 @@ public class SharedCounter {
     /**
      * Reads the current counter's value under a shared read lock.<br>
      * Multiple threads can execute this method simultaneously.
-     *
-     * @return the current counter's value
      */
     public void read() {
         rwLock.readLock().lock();
